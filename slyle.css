@@ -49,7 +49,7 @@ svg{
 /* А псевдоэлементу без позицонирования нельзя задать размер, да?
 
 .main-inf::before{
-	content:url('komp.png');
+	content:url('img/komp.png');
 	display:inline-block;
 	margin-left:140px;
     width:600px;
@@ -141,7 +141,7 @@ p{
 }
 
 .features div::before{
-	content:url('project.png');
+	content:url('img/project.png');
 	width: 50px;
 	height: 50px;
 	float:left;
@@ -215,54 +215,54 @@ video{
 .first:nth-of-type(even){
 	width: 25%;
 	min-height:300px;
-	background:url('work.png') no-repeat;
+	background:url('img/work.png') no-repeat;
 }
 
 .first:nth-of-type(odd){
 	width: 25%;
-	background:url('canban.png') no-repeat;
+	background:url('img/canban.png') no-repeat;
 	min-height:300px;
 }
 
 .second:nth-of-type(odd){
 	width: 25%;
 	min-height:300px;
-	background:url('work.png') no-repeat;
+	background:url('img/work.png') no-repeat;
 }
 
 .second:nth-of-type(even){
 	width: 25%;
-	background:url('canban.png') no-repeat;
+	background:url('img/canban.png') no-repeat;
 	min-height:300px;
 }
 
 .first:nth-of-type(even):hover{
 	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
 	rgba(52, 84, 122, 0.8)), 
-	url('work.png');
+	url('img/work.png');
 }
 
 .first:nth-of-type(odd):hover{
 	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
 	rgba(52, 84, 122, 0.8)), 
-	url('canban.png');
+	url('img/canban.png');
 }
 
 .second:nth-of-type(odd):hover{
 	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
 	rgba(52, 84, 122, 0.8)), 
-	url('work.png');
+	url('img/work.png');
 }
 
 .second:nth-of-type(even):hover{
 	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
 	rgba(52, 84, 122, 0.8)), 
-	url('canban.png');
+	url('img/canban.png');
 }
 
 .projects > a:hover::after{
 	content:'';
-	background:url('eye.png');
+	background:url('img/eye.png');
 	width:100px;
 	height:58px;
 	display:block;
@@ -363,7 +363,7 @@ footer p{
 	display:inline-block;
 	width:65px;
 	height:65px;
-	background:url('vk.png') no-repeat center center;
+	background:url('img/vk.png') no-repeat center center;
 }
 
 
