@@ -1,0 +1,384 @@
+body{
+	margin:0;
+	max-width:100vw;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+
+	color: #727272;
+	width:99vw;
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+a:hover{
+	text-decoration:underline;
+	color:navy;
+}
+
+header{
+	background-color:#EEEFF1;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.top{
+	display:flex;
+	padding:70px;
+	align-items:center;
+}
+
+svg{
+	margin-left:70px;
+	margin-right:400px;;
+}
+
+.menu{
+	display:flex;
+	justify-content:space-between;
+    list-style:none;	
+	width:611px;
+	text-transform:uppercase;
+}
+
+/* А псевдоэлементу без позицонирования нельзя задать размер, да?
+
+.main-inf::before{
+	content:url('komp.png');
+	display:inline-block;
+	margin-left:140px;
+    width:600px;
+}
+*/
+
+.main-inf{
+	display:flex;
+    flex-wrap: wrap;
+	justify-content:center;
+	padding:0 70px 105px 140px;
+	margin:auto;
+}
+
+.main-inf img{
+	margin-right:150px;
+	margin-top:50px;
+}	
+
+h1{
+	font-family: Roboto;
+	font-style: normal;
+	font-size: 48px;
+	line-height: 79px;
+	color: #000000;	
+	font-weight: 500;
+	margin-top:0;
+}
+
+.main-inf p{
+	width:540px;
+}
+
+.btn{
+	width:225px;
+	display:inline-block;
+	text-transform:uppercase;
+	background-color:#34547A;
+	color:#fff;
+	text-align:center;
+	padding:24px 41px;
+	margin-top:40px;
+}
+
+.btn:hover{
+	color:#fff;
+	text-decoration-color:cyan;
+}
+
+h2{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 37px;
+	text-align: center;
+	color:black;
+	margin-top:0;
+}
+
+h3{
+	margin:0;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 25px;
+}
+
+p{
+	margin:0;
+}
+
+.me{
+	width:540px;
+	text-align:center;
+	margin:auto;
+	padding:119px 0 113px 0;
+}
+
+.features{
+	display:flex;
+	flex-direction:row;
+	background-color:#34547A;
+	color:#fff;
+	padding-top:100px;
+	padding-bottom:100px;
+	justify-content:space-around;
+}
+
+.features div::before{
+	content:url('project.png');
+	width: 50px;
+	height: 50px;
+	float:left;
+	margin-right:10px;
+}
+
+.features div{
+	width: 141px;
+	height:50px;
+}
+
+.skills{
+	width: 1150px;
+	height: 450px;	
+	padding-top:89px;
+	padding-bottom:101px;
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;	
+}
+
+.skills h2{
+	text-align:left;
+}
+
+.skills div{
+	width:445px;
+}
+
+progress{
+	width: 445px;
+	height: 4px;
+	border:none;
+}
+
+.process{
+	background: #EEEFF1;
+}
+
+.process div{
+	width: 540px;
+	margin:auto;
+	text-align:center;
+	padding:100px 0 57px;
+	
+}
+
+video{
+	display:block;
+	margin:auto;
+	padding-bottom:100px;
+}
+
+.projects{
+	width:99vw;
+	display:flex;
+	flex-wrap:wrap;
+	//background:rgb(23,55,135) no-repeat center center;
+	
+}
+
+.projects a{
+	width: 25%;
+	max-height:300px;
+	overflow: hidden;
+	position:relative;
+}
+
+.first:nth-of-type(even){
+	width: 25%;
+	min-height:300px;
+	background:url('work.png') no-repeat;
+}
+
+.first:nth-of-type(odd){
+	width: 25%;
+	background:url('canban.png') no-repeat;
+	min-height:300px;
+}
+
+.second:nth-of-type(odd){
+	width: 25%;
+	min-height:300px;
+	background:url('work.png') no-repeat;
+}
+
+.second:nth-of-type(even){
+	width: 25%;
+	background:url('canban.png') no-repeat;
+	min-height:300px;
+}
+
+.first:nth-of-type(even):hover{
+	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
+	rgba(52, 84, 122, 0.8)), 
+	url('work.png');
+}
+
+.first:nth-of-type(odd):hover{
+	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
+	rgba(52, 84, 122, 0.8)), 
+	url('canban.png');
+}
+
+.second:nth-of-type(odd):hover{
+	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
+	rgba(52, 84, 122, 0.8)), 
+	url('work.png');
+}
+
+.second:nth-of-type(even):hover{
+	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), 
+	rgba(52, 84, 122, 0.8)), 
+	url('canban.png');
+}
+
+.projects > a:hover::after{
+	content:'';
+	background:url('eye.png');
+	width:100px;
+	height:58px;
+	display:block;
+	position:absolute;
+	top:calc(50% - 29px);
+	left:calc(50% - 50px);
+}
+
+.clients{
+	margin:auto;
+}
+
+.clients a{
+	display:inline-block;
+	width:255px;
+	height:120px;
+	margin:70px 30px 100px;
+}
+
+.order{
+	background-color:#EEEFF1;
+	padding:100px 0 120px;
+}
+
+.order-text{
+	width:540px;
+	margin:auto;
+	text-align:center;
+}
+
+form{
+	width:540px;
+	margin:65px auto 0px;
+	padding:0;
+	font-size:0;
+}
+
+input[type='text']{
+	margin-right:30px;
+}
+
+input[type='text'], input[type='email']{
+	padding-left:20px;
+	width:255px;
+	height:50px;
+	border:none;
+	font-size:14px;
+	box-sizing:border-box;
+}
+
+textarea{
+	width:540px;
+	height:175px;
+	border:none;
+	box-sizing:border-box;
+	margin-top:20px;
+	resize:none;
+	padding-left:20px;
+	padding-top:17px;
+	font-size:14px;
+}
+
+input[type='submit']{
+	width:190px;
+	height:55px;
+	font-size:14px;
+	vertical-align:middle;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+}
+
+footer{
+	background: #34547A;
+	height:151px;
+	color:#fff;
+	padding:50px;
+	display:flex;
+	justify-content:space-between;
+	box-sizing:border-box;
+}
+
+footer p{
+	font-size:13px;
+}
+
+.author{
+	height:40px;
+	padding:0;
+}
+
+.vk{
+	height:40px;
+}
+
+.vk a{
+	display:inline-block;
+	width:65px;
+	height:65px;
+	background:url('vk.png') no-repeat center center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
